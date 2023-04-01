@@ -1,4 +1,4 @@
-#+TITLE: git-tldr
+#+TITLE: Git tl;dr
 #+EXPORT_FILE_NAME: ~/Nextcloud/computer/git/readme.md 
 #+STARTUP: Overview indent inlineimages align logdone hideblocks
 # #+INCLUDE: "~/Dropbox/computer/websites/testsite/org-export-settings.org"
@@ -14,14 +14,14 @@
 
 ./img/git.png
 
-* TL;DR
-** *Installation*
+
+* *Installation*
 
 ~guix install git~
 
 ~M-x magit~
 
-** *Using Magit [ $ git init ] [ $ git status ]*
+* *Using Magit [ $ git init ] [ $ git status ]*
 
 : magit-status (or "C-x g")
 
@@ -34,7 +34,7 @@ Create repository in ~/Nextcloud/computer/git/?
 Type ~"y"~ then comes buffer magit status with:    
 
 
-** Magit [ $ git status ]
+* Magit [ $ git status ]
 
 Run
 
@@ -62,7 +62,7 @@ Now files are untracked. It turns out:
 You can see that your new README file is untracked, because it's under the "Untracked files" heading in your status output. Untracked basically means that Git sees a file you didn't have in the previous snapshot (commit), and which hasn't yet been staged; Git won't start including it in your commit snapshots until you explicitly tell it to do so.
      #+end_quote
 
-** Magit [ $ git add] [ $ git add . ]
+* Magit [ $ git add] [ $ git add . ]
 Type 
 
 : "s"
@@ -76,7 +76,7 @@ Running git commit --
 unable to auto-detect email address (got 'fhb@ThinkPad.(none)') ... [Hit $ to see buffer magit-process: git for details]
 #+end_src 
 
-** *Configure git*
+* *Configure git*
 
 Ok, Git needs configuring ... there's no ~/.gitconfig yet...
 
@@ -85,7 +85,7 @@ Ok, Git needs configuring ... there's no ~/.gitconfig yet...
 
 ==> now there is a .gitconfig,  and can we commit now?
 
-** *Using Magit: [git commit] *
+* *Using Magit [git commit] *
 
 - yes (after restart) with:
 
@@ -115,7 +115,7 @@ to commit.
 
 There's now have a local repository with a single commit. *Let’s create a matching remote repository next. 
 
-** *The not so fun part... creating the remote (on Github)*
+* *The not so fun part... creating the remote (on Github)*
 
 Connecting the local repository with a single commit to a remote: *creating a matching remote repository, can not do do this in Magit yet* [fn::  https://csm.hu/notes/2022/08/25/following-the-github-flow-with-emacs-and-magit/ ]. 
 
@@ -124,7 +124,7 @@ To connect repo to github via:
 a. https with token (in stead of password);
 b. git via SSH with an SSH key.
 
-** a. https with token (in stead of pasword)
+* a. https with token (in stead of pasword)
 
 Connect repo to Github: with token (in stead of password)
 
@@ -155,13 +155,13 @@ Now, there's an issue:
 
 We do not want to use this token with every push, so: 
 
-** b. SSH - *Magit: better use SSH to connect with Github*
+* b. SSH - *Magit: better use SSH to connect with Github*
    
 To get things working via Magit, [[https://www.reddit.com/r/emacs/comments/x0nf71/comment/imatskh/][Magit: use password-store as auth source for Push and Pull operations?]] : "Just Google for „git ssh how to use”; after you get it configured on your system, it will not require any further changes in Emacs or Magit, everything will just-work :-)"  *Turned out not really... see sub 13. Magit keeps asking for the passprhase of the ssh key...
 
 ==>   Here is a good explanation: [[https://www.atlassian.com/git/tutorials/git-ssh][Git SSH Keys: A Complete Tutorial | Atlassian Git Tutorial]] ; then, this site: [[https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls][About remote repositories - GitHub Docs]] explains the various methods.
 
-** *Generate an SSH key on Linux*
+* *Generate an SSH key on Linux*
 
 This is the tl;dr , more here: file:../protocols/ssh.org (sticks).
 
@@ -192,7 +192,7 @@ Once the ssh-agent is running the following command will add the new SSH key to 
 
 Now it works! 
 
-** *Now creating the remote repository*
+* *Now creating the remote repository*
 
 The remote repository, can be created with: 
 
@@ -204,7 +204,7 @@ The remote repository, can be created with:
 - [git pull]
 - [git clone]
 
-** *Create it with Git*
+* *Create it with Git*
 
 We allready have a local repo, so: 
 Then [[https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories][Managing remote repositories - GitHub Docs]]:
@@ -217,7 +217,7 @@ Then [[https://docs.github.com/en/get-started/getting-started-with-git/managing-
 
 : > ?Enter passphrase for key '/home/fhb/.ssh/id_rsa': 
 
-** Aside: what is 'origin' 
+* Aside: what is 'origin' 
 
 #+begin_quote
 Origin is just a default naming convention for referring to a remote Git repository. The point is that it is NOT github-specific. If it were, all generic git documentation that tells users how to do things that rely on the existence of a default name for this (ie: git push origin master) would become more complicated, as it would need to tell users how to figure out what the remote is named by their repo hosting provider, then how to do the actual command. -- source: [[https://stackoverflow.com/questions/9252272/why-remote-for-github-is-named-origin-instead-of-github][Why Remote for Github is named "origin" instead of "github" - Stack Overflow]]
@@ -226,7 +226,7 @@ Probably because you also get origin as remote name when you just git clone a re
 #+end_quote
 
 
-** *Magit to push*
+* *Magit to push*
 
 : "C-x g h P p" (‘magit-push-current-to-pushremote’)
 
@@ -240,7 +240,7 @@ push-remote:
 
 : > Enter passphrase for key '/home/fhb/.ssh/id.rsa':     
 
-** *Magit asks for passphrase for ssh key every time*
+* *Magit asks for passphrase for ssh key every time*
 
 Turns out, Magit (git) keeps asking, did this: [[https://superuser.com/questions/988185/how-to-avoid-being-asked-enter-passphrase-for-key-when-im-doing-ssh-operatio][git - how to avoid being asked "Enter passphrase for key " when I'm doing ssh...]]
 
