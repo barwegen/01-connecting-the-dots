@@ -12,9 +12,10 @@
   </a>
 </div>
 
-[[./img/git.png]]                .                  [[./img/magit.png]]
+[./img/git.png]] [[./img/magit.png]]
 
-* TL;DR 
+
+* TL;DR [[./img/git.png]]
 ** *Installation*
 
 ~guix install git~
