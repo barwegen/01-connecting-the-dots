@@ -6,16 +6,20 @@
 #+OPTIONS: html-preamble:t html-postamble:t num:nil ^:nil
 # org-page-fhb2.css
 
-<div align="center">
-  <a href="https://git-scm.com/images/logo@2x.png">
-    <img src="./img/git.png"> 
-  </a>
-</div>
 
  [[./img/magit.png]]
 
 
 * TL;DR [[./img/git.png]]
+
+#+begin_export html
+<div align="center">
+  <a href="https://git-scm.com/images/logo@2x.png">
+    <img src="./img/git.png"> 
+  </a>
+</div>
+#+end_export
+
 ** *Installation*
 
 ~guix install git~
