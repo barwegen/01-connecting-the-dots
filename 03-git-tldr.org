@@ -23,10 +23,11 @@
 
 ** *Using Magit [ $ git init ] [ $ git status ]*
 
-~magit-status~ with ~"C-x g"~
+: magit-status (or "C-x g")
+
 If file in current buffer not in a git repo, Emacs asks:
 
-   #+begin_src 
+#+begin_src 
 Create repository in ~/Nextcloud/computer/git/? 
 #+end_src
 
@@ -35,7 +36,11 @@ Type ~"y"~ then comes buffer magit status with:
 
 ** Magit [ $ git status ]
 
-Run ~"C-x g"~ again:
+Run
+
+:"C-x g" 
+
+ again:
 
    #+begin_src shell
    In the beginning there was darkness
@@ -58,8 +63,11 @@ You can see that your new README file is untracked, because it's under the "Untr
      #+end_quote
 
 ** Magit [ $ git add] [ $ git add . ]
-Type ="s"= to track a file, you need to /stage/ the file:   
-[ $ git add] [ $ git add . ] add all.
+Type 
+
+: "s"
+
+to track a file, you need to /stage/ the file:   
 
 Emacs says: 
 
@@ -72,15 +80,18 @@ unable to auto-detect email address (got 'fhb@ThinkPad.(none)') ... [Hit $ to se
 
 Ok, Git needs configuring ... there's no ~/.gitconfig yet...
 
-~$ git config --global user.name "Your Name"~
-
-~$ git config --global user.email "fhbarwegen@gmail.com"~
+: $ git config --global user.name "Your Name"
+: $ git config --global user.email "fhbarwegen@gmail.com"
 
 ==> now there is a .gitconfig,  and can we commit now?
 
 ** *Using Magit: [git commit] *
 
-- yes (after restart) with ~"C-x g"~ we see (something like): 
+- yes (after restart) with:
+
+: "C-x g" 
+
+then see (something like): 
 
    #+begin_src shell
    Head:     master second commit
@@ -98,7 +109,9 @@ Ok, Git needs configuring ... there's no ~/.gitconfig yet...
 
 If you now change a file (check that wiht git status, ~"C-x g"~), you have to re-add that to the staging area!
 
-~"c"~ to commit
+: "c"  
+
+to commit.
 
 There's now have a local repository with a single commit. *Let’s create a matching remote repository next. 
 
@@ -215,13 +228,15 @@ Probably because you also get origin as remote name when you just git clone a re
 
 ** *Magit to push*
 
-~"C-x g h P p" (‘magit-push-current-to-pushremote’)~
+: "C-x g h P p" (‘magit-push-current-to-pushremote’)
 
 This command pushes the current branch to its push-remote.
 
 With a prefix argument or when the push-remote is either not
 configured or unusable, then let the user first configure the
-push-remote: "C-x h g h M "
+push-remote: 
+
+: "C-x h g h M"
 
 : > Enter passphrase for key '/home/fhb/.ssh/id.rsa':     
 
