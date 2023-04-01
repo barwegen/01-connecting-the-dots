@@ -14,7 +14,7 @@
 
 ./img/git.png
 
-* TL;DR
+* TL;DR 
 ** *Installation*
 
 ~guix install git~
@@ -88,7 +88,7 @@ Ok, Git needs configuring ... there's no ~/.gitconfig yet...
 
 ** *Using Magit [git commit] *
 
-- yes (after restart) with:
+Yes (after restart) with:
 
 : "C-x g" 
 
