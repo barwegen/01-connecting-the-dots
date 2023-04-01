@@ -17,26 +17,25 @@
 * TL;DR
 ** *Installation*
 
-=guix install git=
+~guix install git~
 
-=M-x magit=
+~M-x magit~
 
 ** *Using Magit [ $ git init ] [ $ git status ]*
 
-=magit-status= with ="C-x g"=
-
+~magit-status~ with ~"C-x g"~
 If file in current buffer not in a git repo, Emacs asks:
 
    #+begin_src 
 Create repository in ~/Nextcloud/computer/git/? 
 #+end_src
 
-Type ="y"= then comes buffer magit status with:    
+Type ~"y"~ then comes buffer magit status with:    
 
 
 ** Magit [ $ git status ]
 
-Run ="C-x g"= again:
+Run ~"C-x g"~ again:
 
    #+begin_src shell
    In the beginning there was darkness
@@ -73,14 +72,15 @@ unable to auto-detect email address (got 'fhb@ThinkPad.(none)') ... [Hit $ to se
 
 Ok, Git needs configuring ... there's no ~/.gitconfig yet...
 
-=$ git config --global user.name "Your Name"=
-=$ git config --global user.email "fhbarwegen@gmail.com"=
+~$ git config --global user.name "Your Name"~
+
+~$ git config --global user.email "fhbarwegen@gmail.com"~
 
 ==> now there is a .gitconfig,  and can we commit now?
 
 ** *Using Magit: [git commit] *
 
-- yes (after restart) with ="C-x g"= we see (something like): 
+- yes (after restart) with ~"C-x g"~ we see (something like): 
 
    #+begin_src shell
    Head:     master second commit
@@ -96,9 +96,9 @@ Ok, Git needs configuring ... there's no ~/.gitconfig yet...
    1303281 first commit
    #+end_src
 
-If you now change a file (check that wiht git status, ="C-x g"=), you have to re-add that to the staging area!
+If you now change a file (check that wiht git status, ~"C-x g"~), you have to re-add that to the staging area!
 
-="c"= to commit
+~"c"~ to commit
 
 There's now have a local repository with a single commit. *Let’s create a matching remote repository next. 
 
@@ -107,6 +107,7 @@ There's now have a local repository with a single commit. *Let’s create a matc
 Connecting the local repository with a single commit to a remote: *creating a matching remote repository, can not do do this in Magit yet* [fn::  https://csm.hu/notes/2022/08/25/following-the-github-flow-with-emacs-and-magit/ ]. 
 
 To connect repo to github via:
+
 a. https with token (in stead of password);
 b. git via SSH with an SSH key.
 
@@ -137,7 +138,7 @@ Now, there's an issue:
     You can NOT use the token via magit, so: 
     $ git push -u origin master
     give your username, and in stead of the password this token.
-    - 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
+    - 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 *revoked*, use SSH
 
 We do not want to use this token with every push, so: 
 
@@ -151,30 +152,30 @@ To get things working via Magit, [[https://www.reddit.com/r/emacs/comments/x0nf7
 
 This is the tl;dr , more here: file:../protocols/ssh.org (sticks).
 
-=$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"=
+: $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 
 You will then be prompted to "Enter a file in which to save the key."
 You can specify a file location or press “Enter” to accept the default file location.
 
-=> Enter a file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter]=
+: > Enter a file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter]
 
-=> Enter passphrase (empty for no passphrase): [Type a passphrase]=
+: > Enter passphrase (empty for no passphrase): [Type a passphrase]
 
-=> Enter same passphrase again: [Type passphrase again]=
+: > Enter same passphrase again: [Type passphrase again]
 
 Before adding the new SSH key to the ssh-agent first ensure the ssh-agent is running by executing:
 
-=$ eval "$(ssh-agent -s)"=
+: $ eval "$(ssh-agent -s)"
 
-=> Agent pid 59566=
+: > Agent pid 59566
 
 Before using Git, add your key to ssh-agent: start ssh-agent if not started:
 
-=$ eval `ssh-agent -s`=
+: $ eval `ssh-agent -s`
 
 Once the ssh-agent is running the following command will add the new SSH key to the local SSH agent.
 
-=$ ssh-add -K /Users/you/.ssh/id_rsa=
+: $ ssh-add -K /Users/you/.ssh/id_rsa=
 
 Now it works! 
 
@@ -195,10 +196,13 @@ The remote repository, can be created with:
 We allready have a local repo, so: 
 Then [[https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories][Managing remote repositories - GitHub Docs]]:
 
-$ git remote add origin git@github.com:barwegen/git.git
-$ git branch -M main
-$ git push -u origin main   ==>
-Enter passphrase for key '/home/fhb/.ssh/id_rsa': 
+: $ git remote add origin git@github.com:barwegen/git.git
+
+: $ git branch -M main
+
+: $ git push -u origin main   ==>
+
+: > ?Enter passphrase for key '/home/fhb/.ssh/id_rsa': 
 
 ** Aside: what is 'origin' 
 
@@ -211,7 +215,7 @@ Probably because you also get origin as remote name when you just git clone a re
 
 ** *Magit to push*
 
-="C-x g h P p" (‘magit-push-current-to-pushremote’)=
+~"C-x g h P p" (‘magit-push-current-to-pushremote’)~
 
 This command pushes the current branch to its push-remote.
 
@@ -219,7 +223,7 @@ With a prefix argument or when the push-remote is either not
 configured or unusable, then let the user first configure the
 push-remote: "C-x h g h M "
 
-=> Enter passphrase for key '/home/fhb/.ssh/id.rsa':     =
+: > Enter passphrase for key '/home/fhb/.ssh/id.rsa':     
 
 ** *Magit asks for passphrase for ssh key every time*
 
@@ -228,17 +232,17 @@ Turns out, Magit (git) keeps asking, did this: [[https://superuser.com/questions
 Still, magit (git) keeps asking, /Tarsius/ is giving some info here: [[https://emacs.stackexchange.com/questions/41343/magit-asks-for-passphrase-for-ssh-key-every-time][Magit asks for passphrase for ssh key every time - Emacs Stack Exchange]] :
 (and for git in general here: [[https://superuser.com/questions/1010542/how-to-make-git-not-prompt-for-passphrase-for-ssh-key][How to make git not prompt for passphrase for ssh key? - Super User]].)
 
-=$ guix install keychain=
+: $ guix install keychain
 
 Add you private key to keychain:
 
-=$ keychain --quiet id_rsa=
+: $ keychain --quiet id_rsa
 
 prompted for:
 
 => Enter passphrase for key '/home/fhb/.ssh/id.rsa':      =
 
-=M-x install keychain-environment=
+: M-x install keychain-environment
 
 #+begin_src emacs-lisp
   (use-package keychain-environment
