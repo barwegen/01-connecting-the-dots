@@ -12,7 +12,7 @@
   </a>
 </div>
 
-./img/git.png
+[[~/.dotfiles/img/git.png]]
 
 * TL;DR 
 ** *Installation*
