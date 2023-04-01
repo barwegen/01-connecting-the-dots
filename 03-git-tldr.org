@@ -31,8 +31,9 @@ If file in current buffer not in a git repo, Emacs asks:
 Create repository in ~/Nextcloud/computer/git/? 
 #+end_src
 
-Type ~"y"~ then comes buffer magit status with:    
+Type 
 
+: "y"
 
 ** Magit [ $ git status ]
 
