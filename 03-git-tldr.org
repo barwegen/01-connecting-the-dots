@@ -38,7 +38,7 @@ Type ~"y"~ then comes buffer magit status with:
 
 Run
 
-:"C-x g" 
+~"C-x g"~
 
  again:
 
