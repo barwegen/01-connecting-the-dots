@@ -12,7 +12,7 @@
   </a>
 </div>
 
-*BIG CHANGE*
+./img/git.png
 
 * TL;DR
 ** *Installation*
