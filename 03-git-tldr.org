@@ -12,7 +12,7 @@
   </a>
 </div>
 
-[./img/git.png]] [[./img/magit.png]]
+ [[./img/magit.png]]
 
 
 * TL;DR [[./img/git.png]]
