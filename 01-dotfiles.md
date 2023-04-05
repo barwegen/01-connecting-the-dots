@@ -1,4 +1,4 @@
-![img](./img/dotfiles.png)
+![img](./img/dotfiles48x48.png)
 
 
 # dotfiles - and context: OS - shell - programs
