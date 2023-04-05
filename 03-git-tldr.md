@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://git-scm.com/images/logo@2x.png">
-    <img src="./img/git48x48.png"> 
+    <img src="./img/git48x20.png"> 
     <img src="./img/magit48x48.png"> 
   </a>
 </div>
