@@ -1,6 +1,3 @@
-<div align="center"> <a href="<https://freek@barwegen.nl>"> <img src="./img/folder48x48.png"> </a> </div>
-
-
 # Let's create a dotfiles folder! ![img](./img/folder48x48.png)
 
 -   Create the folder in the right location
