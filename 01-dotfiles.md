@@ -3,7 +3,8 @@
 
 # dotfiles - and context: OS - shell - programs
 
-**dotfiles** - for *user configuration* of software -
+
+## **dotfiles** - for *user configuration* of software -
 
 Many computer software programs store their configuration *settings* in plain, text-based files or directories. A config file, is a local file that controls the operations of a program, utility or process. Linux configuration files contain the settings and instructions for different systems, utilities, applications and processes. They’re frequently plain-text files that contain a variable name (the name of the setting) followed by it's value, commands or instructions.
 
@@ -19,27 +20,33 @@ On *Unix based systems*, dotfiles are hidden by the *Operating System* by defaul
 
 &#x2014;
 
-**Aside** - *various* programs: user programs -vs- the kernel / deamons / system programs -TODO
+
+## **Aside** - *various* programs:  user programs -vs- the kernel / deamons / system programs -TODO
 
 > rc is an ancient Plan 9 abbreviation that stands for run commands. Eric Raymond's The Jargon File &#x2013;source: <sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup>
 
-**Aside** *Unix based systems* - configuration in Windows
+
+## **Aside** *Unix based systems* - configuration in Windows
 
 > The Windows OS does use per-application configuration files as well, but Windows largely depends on something called the Registry. The Registry is an ultra-fast database that stores configurations for the Windows OS and its applications.
 > 
 > Linux is much simpler. Configurations for applications in Linux are stored in individual configuration files. This makes management of the Linux OS both much easier and more difficult. These configuration options are easy to change as well as migrate to other systems, but these files can be more tedious to document as well. &#x2013;source: <sup><a id="fnr.3" class="footref" href="#fn.3" role="doc-backlink">3</a></sup>
 
-**Aside** *Operating System* - why
+
+## **Aside** *Operating System* - why
 
 > "As is common for home computers of the early 1980s, the C64 incorporates a ROM-based version of the BASIC programming language. **There is no operating system as such. The KERNAL is accessed via BASIC commands**." &#x2013;source: <sup><a id="fnr.4" class="footref" href="#fn.4" role="doc-backlink">4</a></sup>
 
 -   <file:///home/fhb/Nextcloud/computer/apps/tty.md>
 
-**Aside** *Kernal* - access
 
-**Aside** *Shell* - commands - man - man mode -
+## **Aside** *Kernal* - access
 
-**Asdide** Linux's BUILT-IN manual - just another command
+
+## **Aside** *Shell* - commands - man - man mode -
+
+
+## **Asdide** Linux's BUILT-IN manual - just another command
 
 -   [man page - Wikipedia](https://en.wikipedia.org/wiki/Man_page)
 -   [The Linux man-pages project](https://www.kernel.org/doc/man-pages/)
@@ -47,7 +54,8 @@ On *Unix based systems*, dotfiles are hidden by the *Operating System* by defaul
 
 You can easily find out which sections of the manual contain entries for a command. Each man page has a title and a short description. The -f (whatis) option searches the page titles and returns a list of matches.
 
-**À propos** man -f
+
+## **À propos** man -f
 
 -   **à propos:** synoniem: trouwens synoniem: bovendien, overigens, verder
     -   <https://etymologiebank.nl/trefwoord/apropos>
