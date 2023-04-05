@@ -1,22 +1,22 @@
-- [dotfiles - and context: OS - shell - programs](#orgb9d7238)
-  - [**dotfiles** - for *user configuration* of software -](#orgb1ba250)
-  - [**Aside** - *various* programs:  user programs -vs- the kernel / deamons / system programs -TODO](#orgc92ccff)
-  - [**Aside** *Unix based systems* - configuration in Windows](#org48f5269)
-  - [**Aside** *Operating System* - why](#orgeb075cf)
-  - [**Aside** *Kernal* - access](#org3d97df5)
-  - [**Aside** *Shell* - commands - man - man mode -](#org3dd677a)
-  - [**Asdide** Linux's BUILT-IN manual - just another command](#org34f9771)
-  - [**À propos** man -f](#org2f87203)
+- [dotfiles - and context: OS - shell - programs](#org84bd96d)
+  - [**dotfiles** - for *user configuration* of software -](#org4efb018)
+  - [**Aside** - *various* programs:  user programs -vs- the kernel / deamons / system programs -TODO](#org0fe7f28)
+  - [**Aside** *Unix based systems* - configuration in Windows](#org259836f)
+  - [**Aside** *Operating System* - why](#org0355575)
+  - [**Aside** *Kernal* - access](#orgbdfed09)
+  - [**Aside** *Shell* - commands - man - man mode -](#org06a98f0)
+  - [**Asdide** Linux's BUILT-IN manual - just another command](#orgba5d93f)
+  - [**À propos** man -f](#org804c641)
 
 ![img](./img/dotfiles.png)
 
 
-<a id="orgb9d7238"></a>
+<a id="org84bd96d"></a>
 
 # dotfiles - and context: OS - shell - programs
 
 
-<a id="orgb1ba250"></a>
+<a id="org4efb018"></a>
 
 ## **dotfiles** - for *user configuration* of software -
 
@@ -35,14 +35,14 @@ On *Unix based systems*, dotfiles are hidden by the *Operating System* by defaul
 &#x2014;
 
 
-<a id="orgc92ccff"></a>
+<a id="org0fe7f28"></a>
 
 ## **Aside** - *various* programs:  user programs -vs- the kernel / deamons / system programs -TODO
 
 > rc is an ancient Plan 9 abbreviation that stands for run commands. Eric Raymond's The Jargon File &#x2013;source: <sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup>
 
 
-<a id="org48f5269"></a>
+<a id="org259836f"></a>
 
 ## **Aside** *Unix based systems* - configuration in Windows
 
@@ -51,7 +51,7 @@ On *Unix based systems*, dotfiles are hidden by the *Operating System* by defaul
 > Linux is much simpler. Configurations for applications in Linux are stored in individual configuration files. This makes management of the Linux OS both much easier and more difficult. These configuration options are easy to change as well as migrate to other systems, but these files can be more tedious to document as well. &#x2013;source: <sup><a id="fnr.3" class="footref" href="#fn.3" role="doc-backlink">3</a></sup>
 
 
-<a id="orgeb075cf"></a>
+<a id="org0355575"></a>
 
 ## **Aside** *Operating System* - why
 
@@ -60,17 +60,17 @@ On *Unix based systems*, dotfiles are hidden by the *Operating System* by defaul
 -   <file:///home/fhb/Nextcloud/computer/apps/tty.md>
 
 
-<a id="org3d97df5"></a>
+<a id="orgbdfed09"></a>
 
 ## **Aside** *Kernal* - access
 
 
-<a id="org3dd677a"></a>
+<a id="org06a98f0"></a>
 
 ## **Aside** *Shell* - commands - man - man mode -
 
 
-<a id="org34f9771"></a>
+<a id="orgba5d93f"></a>
 
 ## **Asdide** Linux's BUILT-IN manual - just another command
 
@@ -81,7 +81,7 @@ On *Unix based systems*, dotfiles are hidden by the *Operating System* by defaul
 You can easily find out which sections of the manual contain entries for a command. Each man page has a title and a short description. The -f (whatis) option searches the page titles and returns a list of matches.
 
 
-<a id="org2f87203"></a>
+<a id="org804c641"></a>
 
 ## **À propos** man -f
 
