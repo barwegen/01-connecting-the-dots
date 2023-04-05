@@ -1,4 +1,8 @@
-![img](./img/dotfiles48x48.png)
+<div align="center">
+  <a href="https://git-scm.com/images/logo@2x.png">
+    <img src="./img/dotfiles48x48.png"> 
+  </a>
+</div>
 
 
 # dotfiles - and context: OS - shell - programs
