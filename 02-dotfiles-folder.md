@@ -1,4 +1,4 @@
-![img](./img/folder.png)
+<div align="center"> <a href="<https://freek@barwegen.nl>"> <img src="./img/dotfiles.png"> </a> </div>
 
 
 # Let's create a dotfiles folder!
