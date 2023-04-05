@@ -2,12 +2,12 @@
   <a href="https://git-scm.com/images/logo@2x.png">
     <img src="./img/git48x20.png"> 
     </br>
-    <img src="./img/magit48x48.png"> 
+    <img src=""> 
   </a>
 </div>
 
 
-# TL;DR
+# TL;DR ![img](/.img/magit48x48.png)
 
 
 ## **Installation**
