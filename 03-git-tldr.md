@@ -7,7 +7,7 @@
 </div>
 
 
-# TL;DR ![img](/.img/magit48x48.png)
+# TL;DR <img src=".img/magit48x48.png">
 
 
 ## **Installation**
