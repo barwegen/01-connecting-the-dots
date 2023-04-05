@@ -2,4 +2,6 @@
 
 **Sharpening that knife**
 
-1 install 2 configure 3 use
+1.  install
+2.  configure
+3.  use
