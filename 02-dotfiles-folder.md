@@ -1,4 +1,4 @@
-<div align="center"> <a href="<https://freek@barwegen.nl>"> <img src="./img/dotfiles.png"> </a> </div>
+<div align="center"> <a href="<https://freek@barwegen.nl>"> <img src="./img/folder.png"> </a> </div>
 
 
 # Let's create a dotfiles folder!
