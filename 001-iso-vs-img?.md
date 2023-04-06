@@ -4,7 +4,10 @@
   </a>
 </div>
 
-tl;dr
+
+# tl;dr
+
+Download the disk image.
 
 Plugin USB, use lsblk again to identify your device:
 
@@ -43,19 +46,16 @@ sync
 Once this is done, you should be able to reboot the system and boot from the USB stick
 
 
-# iso vs img? - (optical) disk image
-
-> There is no difference in the structure of ISO and IMG formats if the IMG file is uncompressed. It is possible for an IMG format file to be renamed with the ISO file extension and then opened in software that only recognizes the ISO file format. This is an effective way of accessing disc information in programs that do not handle the IMG format. &#x2013;source: <https://www.techwalla.com/articles/what-are-the-differences-between-iso-and-img-files>)
+# Commentary
 
 
-# Aside: NOT digital images!
+## What are we talking about? - *What*
 
-An image file format is file format for a *[digital image](https://en.wikipedia.org/wiki/Digital_image)*: an image is visual representation of somthing.
+**Aside: NOT digital images!**
+
+An image file format is file format for a *[digital image](https://en.wikipedia.org/wiki/Digital_image)*: an image is visual representation of somthing. &#x2013;
 
 But that's not todays' topic: that is *disk image*:
-
-
-# What are we talking about? - *What*
 
 *copy of data on an optical disk* An *ISO file* (often called an ISO image), is an archive file that contains *an identical copy -or image- of data found on an /optical* disc/, like a CD or DVD. *They* (cd or dvd) are often used for:
 
@@ -66,10 +66,16 @@ You can think of an ISO image as a complete copy of everything stored on a physi
 
 *the name* The name ISO was taken from **the name of the file system used by optical media**, which is usually ISO 9660.
 
-Since it is a file format, you can store it on any storage device, not only the *optical*. But before the 'how' first the 'why':
+**Aside** iso vs img? - (optical) disk image
+
+> There is no difference in the structure of ISO and IMG formats if the IMG file is uncompressed. It is possible for an IMG format file to be renamed with the ISO file extension and then opened in software that only recognizes the ISO file format. This is an effective way of accessing disc information in programs that do not handle the IMG format. &#x2013;source: <https://www.techwalla.com/articles/what-are-the-differences-between-iso-and-img-files>)
+
+&#x2013;
+
+So far the aside. Since it is a file format, you can store it on any storage device, not only the *optical*. But before the 'how' first the 'why':
 
 
-# The idea - *Why*
+## The idea - *Why*
 
 *the idea* The idea behind ISO images is that you can archive an exact digital copy of a disc, and then later use that image to burn a new disc that’s in turn an exact copy of the original. Most operating systems (and many utilities) also allow you **mount an ISO image as a virtual disc**, in which case all your apps treat it as if a real optical disc were inserted.
 
@@ -78,14 +84,21 @@ Since it is a file format, you can store it on any storage device, not only the 
 *OS* Most downloadable operating systems, including Windows and various Linux distros are distributed as ISO images. This comes in handy when downloading the current version of Ubuntu to install on your machine or installing that old game disc on a laptop without a physical drive.
 
 
-# Clone/mount/burn/extract etc. aka - *How*
+## .iso download of OS to sd card storage - *How*
 
 Now, because it is a *file format*, you can store it on any storage device.
 
 
-## 1. Ad sd: OS /Imaging
+### .iso of OS for Thinkpad T14 / pinebook pro via sd card
+
+**Current OS** An ISO-9660 installation image that can be written to a USB stick or burnt to a DVD can be downloaded from ‘<https://ftp.gnu.org/gnu/guix/guix-system-install-1.3.0.x86_64-linux.iso>’.
+
+**Pinebook Pro & pinephone**
 
 source: [Pinebook Pro - PINE64](https://wiki.pine64.org/index.php/Pinebook_Pro) and [NOOB - PINE64](https://wiki.pine64.org/index.php/NOOB): **Setting up your device (i.c. the pinebook pro)**
+
+
+### sd card
 
 Linux PC or MAC with a SD Card Reader connected to the Internet
 
@@ -106,7 +119,7 @@ Step-by-Step Instructions to Flashing MicroSD Cards
 
 *ASIDE* do not see any AppImage for ARM?! Did find a repository where you can download an apt (debian based) package: [GitHub - futurejones/balena-etcher-arm: Balena Etcher for Raspberry Pi 4 and &#x2026;](https://github.com/futurejones/balena-etcher-arm)
 
-*Downloading and extracting OS image(s)* You can find OS images for the respective devices in the [device section](http://wiki.pine64.org/index.php/Main_Page) on the main page. On Linux you can only use images designated as ‘DD’.
+*Downloading and extracting OS image(s)* You can find OS images for the respective pine64 devices in the [device section](http://wiki.pine64.org/index.php/Main_Page) on the main page. On Linux you can only use images designated as ‘DD’.
 
 Having downloaded the required OS image proceed to use 7zip to unarchive it by double clicking the archive, and selecting ‘Extract All’. Upon completion, note the destination where the .img file was extracted (‘Downloads’ folder by default). Once the process has completed, you can proceed to imaging the .img file.
 
@@ -120,42 +133,7 @@ Having downloaded the required OS image proceed to use 7zip to unarchive it by d
 Insert the sdcard en ga verder bij *unmount the sdcard and why! and if needed backup!*
 
 
-### Pinebook Pro - Debian from Scratch, Debian 'upstream' and Pinebook Por Debian Installer
-
-Download at: [Pinebook Pro Debian Installer - PINE64](https://wiki.pine64.org/index.php/Pinebook_Pro_Debian_Installer)
-
--   script: [GitHub - daniel-thompson/pinebook-pro-debian-installer: Unofficial Debian ins&#x2026;](https://github.com/daniel-thompson/pinebook-pro-debian-installer/)
-
--   Unmount any existing filesystems on the disk you want to install onto.
--   
-
-;; SCRIPT
-
-```shell
-git clone  https://github.com/daniel-thompson/pinebook-pro-debian-installer/
-```
-
-Now got into the folder
-
-```shell
-cd pinebook-pro-debian-installer
-```
-
-Now run the script:
-
-Run ./install-debian. This will default to installing to the SD card, to change this try ./install-debian BLKDEV=/dev/mmcblk0, ./install-debian BLKDEV=/dev/mmcblk2 or ./install-debian BLKDEV=/dev/sda as appropriate.
-
-```
-./install-debian
-```
-
-Additional options
-
-
-## unmount the sdcard and why! and if needed backup!
-
-
-### 1. umounting and why
+### unmount the sdcard and why! and if needed backup!
 
 1.  after inserting sd card,
 2.  navigate to the (backup)destination/download directory and
@@ -187,74 +165,12 @@ sudo umount /dev/mmcblk1p2
 ```
 
 
-### 2. if needed, first *backup* the system on the sdcard (and shrink it) to the 'eMMC'!
+### copy the .iso to the sd card
 
-need enoufg space (!!!!!), i.c. I do a backup! We do not de sepearate partitions, because we want a backup entire sd card, of inclduding partitiontable and all
-
-```shell
-sudo dd if=/dev/mmcblk1 of=sdcard.img bs=4M; sync
-```
-
--   use the command sync to ensure everything is written to the microSD card.
-
-Now, to backup **your system**, you need an exact same size or bigger, to make an exact copy of OS!!! OR use PiShrink!!! to shrink the image
-
-Now we *zip*:
-
-```shell
-gzipp sdcard.img
-```
-
-or, together: sudo dd if=/dev/mmcblk1 | gzip > sdcard2.ing.gz
-
-Now we reverse
-
-```shell
-sudo dd if=sccard.img of=/dev/mmcblk1 bs=4M; sync
-```
-
-Or
-
-```shell
-gzip -dc sccard.img | sudo of=/dev/mmcblk1 bs=4M; sync
-```
-
-Now, put it back in your PBP (or pi) and you are back in business! (zie ook: [How to Back Up/Image your SD Card on Linux - YouTube](https://www.youtube.com/watch?v=sUYVKhI_84E&list=PLT98CRl2KxKGAPmMdAy3folFiiiJqKtoP&index=20)
-
-NOW, can we do something like this with docker??? TODO!!
+Now "dd" the downloaded image on the sd card and its ready to boot.
 
 
-### 3. if needed shrinking an .img
-
-wget <https://raw.githubusercontent.com/Drewsif/PiShrink/master/pishrink.sh>
-
-
-### 4a. if 1. OS/Imaging
-
-Now "dd" the downloaded image on the sd card and its ready to boot! Zie ook overzicht hiervoor
-
-
-### 4b. if 2. script upststream debian
-
--   after inserting and umoumt sd
--   copy url of script ( <https://github.com/daniel-thompson/pinebook-pro-debian-installer/> )
-
-```shell
-git clone https://github.com/daniel-thompson/pinebook-pro-debian-installer/
-```
-
-go in the folder
-
-```shell
-sudo ./install-debian
-```
-
-**set locale as default!!!**
-
-finish setup (most notable, choose your desktop!!)
-
-
-# Aside: other types than optical (&#x2026;) - Unix’s “Everything Is a File”
+## Aside: other types than optical (&#x2026;) - Unix’s “Everything Is a File”
 
 Like many Unix and Linux commands, dd reads in from standard input and writes out to the standard output.
 
@@ -262,20 +178,8 @@ It also relies on the Unix model that most things can be treated as files; that 
 
 > First, much of the sentiment you can find online and in books about Unix being all about file I/O and Windows being "broken" in this regard is obsolete. Windows NT fixed a lot of this. &#x2013;source: [A layman's explanation for "Everything is a file" — what differs from Windows&#x2026;](https://unix.stackexchange.com/questions/141016/a-laymans-explanation-for-everything-is-a-file-what-differs-from-windows)
 
-*storage* *memory*
 
--   floppy
--   hd
--   usb
--   sd
--   ssd
--   emmc
--   nvme
--   etc
-
-Other "files" &#x2026;
-
-**Aside: file, file format**
+## Aside: file, type (iso), format
 
 > In 1952, "file" denoted, among other things, information stored on punched cards.
 > 
@@ -295,10 +199,12 @@ Other "files" &#x2026;
 
 ./img/
 
-**Aside: file extensions\*** Aside: compression\*
+**Aside: file extensions\***
+
+**Aside: compression**
 
 
-# Aside: types of memory
+## Aside: types of memory - *Where*
 
 > An archaic synonym for memory is store. &#x2013;source:[Computer memory - Wikipedia](https://en.wikipedia.org/wiki/Computer_memory#cite_note-computerhistory-7)
 
@@ -330,11 +236,24 @@ Zie verder: [Computer hardware - Wikipedia](https://en.wikipedia.org/wiki/Comput
 
 The template for all modern computers is the Von Neumann architecture, detailed in a 1945 paper by Hungarian mathematician John von Neumann. This describes a design architecture for an electronic digital computer with subdivisions of a processing unit consisting of an arithmetic logic unit and processor registers, a control unit containing an instruction register and program counter, a memory to store both data and instructions, external mass storage, and input and output mechanisms. The meaning of the term has evolved to mean a stored-program computer in which an instruction fetch and a data operation cannot occur at the same time because they share a common bus. This is referred to as the Von Neumann bottleneck and often limits the performance of the system.
 
+*storage*
+
+-   floppy
+-   hd
+-   usb
+-   sd
+-   ssd
+-   emmc
+-   nvme
+-   etc
+
 Ga verder met:
 
--   Code
--   dat andere boek
+-   Code: The Hidden Language of Computer Hardware and Software, 2nd Edition, By Charles Petzold
+
+
+## Filing (legal), submitting a document to the clerk of a court
 
 ## Footnotes
 
-<sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> code is a system of rules (e.g. a (cryptographic) hash function?!) to convert information into another form, *sometimes shortened or secret*, for communication through a communication channel or storage in a storage medium
+<sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> code is a system of rules to convert information into another form, *sometimes shortened or secret*, for communication through a communication channel or storage in a storage medium ; link www.google.nl
