@@ -1,21 +1,23 @@
 <h1>
-<div align="center">
- <a href="https://git-scm.com/images/logo@2x.png">
-    <img src="./img/guix48x48.png"> 
-    </br>
-    </hr>
-  </a>
-</div>
+  <div align="center">
+   <a href="https://git-scm.com/images/logo@2x.png">
+      <img src="./img/guix48x48.png"> 
+      </br>
+      </hr>
+    </a>
+  </div>
 </h1>
 
-GNU Guix focuses on respecting the user’s computing freedom.
+GNU Guix focuses on respecting the user’s computing *freedom*.
 
--   **profile:** a profile is a directory containing installed packages. ([guix#Getting Started](guix#Getting Started))
+;; Install the link type (org-link-set-parameters "info" :follow #'org-info-open :export #'org-info-export :store #'org-info-store-link :insert-description #'org-info-description-as-command)
 
 
 # tl;dr
 
-installing OS with usb / working with *images*: [link](./001-iso-img.md) i
+installing OS with usb / working with *images*: [link](./001-iso-img.md)
+
+-   **profile:** a profile is a directory containing installed packages. ([guix#Getting Started](guix#Getting Started))
 
 
 # *System* installation (2)
