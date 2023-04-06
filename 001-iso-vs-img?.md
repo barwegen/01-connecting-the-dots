@@ -279,7 +279,7 @@ Other "files" &#x2026;
 
 > In 1952, "file" denoted, among other things, information stored on punched cards.
 > 
-> ![img](./img/file-punch-card-decks256x256.png)
+> ![img](./img/file-system-punch-card-decks256x256.png) ./img/file-punched-card-decks256x256.png]]
 > 
 > On most modern operating systems, files are organized into one-dimensional arrays of bytes. The format of a file is defined by its content since a file is solely a container for data.
 > 
