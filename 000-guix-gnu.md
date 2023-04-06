@@ -10,7 +10,7 @@
 
 GNU Guix focuses on respecting the user’s computing *freedom*.
 
-;; Install the link type (org-link-set-parameters "info" :follow #'org-info-open :export #'org-info-export :store #'org-info-store-link :insert-description #'org-info-description-as-command)
+[org#Activation](org#Activation)
 
 
 # tl;dr
