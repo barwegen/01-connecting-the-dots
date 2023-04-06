@@ -1,8 +1,10 @@
-<div align="center">
-  <a href="https://git-scm.com/images/logo@2x.png">
-    <img src="./img/dotfiles48x48.png"> 
-  </a>
-</div>
+<h1>
+  <div align="center">
+    <a href="https://git-scm.com/images/logo@2x.png">
+      <img src="./img/dotfiles48x48.png"> 
+    </a>
+  </div>
+</h1>
 
 
 # dotfiles - and context: OS - shell - programs
