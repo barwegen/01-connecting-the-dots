@@ -11,14 +11,10 @@ GNU Guix focuses on respecting the user’s computing freedom.
 
 # tl;dr
 
-installing OS with usb - making an image
-
-You can always find the current system configuration at /run/current-system/configuration.scm but I recommend keeping your own copy of your system configuration file that you check into source control.
-
-<file:///run/current-system/configuration.scm>
+installing OS with usb / working with *images*: <./001-iso-vs-img?.md>
 
 
-# System installation (2)
+# *System* installation (2)
 
 -   download the .iso
     -   the free one: <https://guix.gnu.org/>
@@ -72,6 +68,10 @@ Going further: \*Note Invoking guix pull::, for more information. \*Note Channel
 
 
 ## Upgrading the Guix System - older generations
+
+You can always find the current system configuration at /run/current-system/configuration.scm but I recommend keeping your own copy of your system configuration file that you check into source control.
+
+<file:///run/current-system/configuration.scm> **BUT**
 
 If you installed Guix System, one of the first things you’ll want to do is to upgrade your system. Once you’ve run ‘guix pull’ to get the latest Guix, you can upgrade the system like this:
 
