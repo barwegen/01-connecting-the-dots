@@ -277,7 +277,19 @@ Other "files" &#x2026;
 
 **Aside: file, file format**
 
-> In 1952, "file" denoted, among other things, information stored on punched cards. (&#x2026;) [./img/file-punch-card-decks256x256.png]] On most modern operating systems, files are organized into one-dimensional arrays of bytes. The format of a file is defined by its content since a file is solely a container for data. (&#x2026;) On some platforms the format is indicated by its filename extension, specifying the rules for how the bytes must be organized and interpreted meaningfully. (&#x2026;) &#x2013;source: [Computer file - Wikipedia](https://en.wikipedia.org/wiki/Computer_file)
+> In 1952, "file" denoted, among other things, information stored on punched cards.
+> 
+> ![img](./img/file-punch-card-decks256x256.png)
+> 
+> On most modern operating systems, files are organized into one-dimensional arrays of bytes. The format of a file is defined by its content since a file is solely a container for data.
+> 
+> (&#x2026;)
+> 
+> On some platforms the format is indicated by its filename extension, specifying the rules for how the bytes must be organized and interpreted meaningfully.
+> 
+> (&#x2026;)
+> 
+> &#x2013;source: [Computer file - Wikipedia](https://en.wikipedia.org/wiki/Computer_file)
 
 > A file format is a standard way that information is [*encoded*](sec.md) <sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup> for storage in a computer file. It specifies how bits are used to encode information in a digital storage medium. File formats may be either proprietary or free. &#x2013;source: [File format - Wikipedia](https://en.wikipedia.org/wiki/File_format)
 
