@@ -1,3 +1,4 @@
+<h1>
 <div align="center">
  <a href="https://git-scm.com/images/logo@2x.png">
     <img src="./img/guix48x48.png"> 
@@ -5,6 +6,7 @@
     </hr>
   </a>
 </div>
+</h1>
 
 GNU Guix focuses on respecting the user’s computing freedom.
 
@@ -14,11 +16,6 @@ GNU Guix focuses on respecting the user’s computing freedom.
 # tl;dr
 
 installing OS with usb / working with *images*: [link](./001-iso-img.md) i
-
--   Create the folder in the right location
--   Move some configuration files into it
--   Link them back to the original location
--   Verify that it works!
 
 
 # *System* installation (2)
@@ -65,7 +62,9 @@ Once you’ve installed a set of packages, you will want to periodically upgrade
 
     guix pull
 
-The end result is a new ‘guix’ command, under ‘~/.config/guix/current/bin’. o jkkkkkjk okYou can display the exact revision of Guix you’re currently using by running:
+The end result is a new ‘guix’ command, under ‘~/.config/guix/current/bin’.
+
+You can display the exact revision of Guix you’re currently using by running:
 
     guix describe
 
