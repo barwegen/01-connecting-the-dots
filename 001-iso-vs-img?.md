@@ -117,10 +117,10 @@ Having downloaded the required OS image proceed to use 7zip to unarchive it by d
 
 *Imaging from terminal*
 
-Insert the sdcard en ga verder bij punt 3!
+Insert the sdcard en ga verder bij *unmount the sdcard and why! and if needed backup!*
 
 
-## Pinebook Pro - Debian from Scratch, Debian 'upstream' and Pinebook Por Debian Installer
+### Pinebook Pro - Debian from Scratch, Debian 'upstream' and Pinebook Por Debian Installer
 
 Download at: [Pinebook Pro Debian Installer - PINE64](https://wiki.pine64.org/index.php/Pinebook_Pro_Debian_Installer)
 
@@ -152,10 +152,10 @@ Run ./install-debian. This will default to installing to the SD card, to change 
 Additional options
 
 
-## 3. unmount the sdcard and why! and if needed backup!
+## unmount the sdcard and why! and if needed backup!
 
 
-## 1. umounting and why
+### 1. umounting and why
 
 1.  after inserting sd card,
 2.  navigate to the (backup)destination/download directory and
@@ -187,7 +187,7 @@ sudo umount /dev/mmcblk1p2
 ```
 
 
-## 2. if needed, first *backup* the system on the sdcard (and shrink it) to the 'eMMC'!
+### 2. if needed, first *backup* the system on the sdcard (and shrink it) to the 'eMMC'!
 
 need enoufg space (!!!!!), i.c. I do a backup! We do not de sepearate partitions, because we want a backup entire sd card, of inclduding partitiontable and all
 
@@ -224,17 +224,17 @@ Now, put it back in your PBP (or pi) and you are back in business! (zie ook: [Ho
 NOW, can we do something like this with docker??? TODO!!
 
 
-## 3. if needed shrinking an .img
+### 3. if needed shrinking an .img
 
 wget <https://raw.githubusercontent.com/Drewsif/PiShrink/master/pishrink.sh>
 
 
-## 4a. if 1. OS/Imaging
+### 4a. if 1. OS/Imaging
 
 Now "dd" the downloaded image on the sd card and its ready to boot! Zie ook overzicht hiervoor
 
 
-## 4b. if 2. script upststream debian
+### 4b. if 2. script upststream debian
 
 -   after inserting and umoumt sd
 -   copy url of script ( <https://github.com/daniel-thompson/pinebook-pro-debian-installer/> )
@@ -254,13 +254,11 @@ sudo ./install-debian
 finish setup (most notable, choose your desktop!!)
 
 
-# Aside: file extensions
-
-
-# Aside: file format
-
-
 # Aside: other types than optical (&#x2026;) - Unix’s “Everything Is a File”
+
+Like many Unix and Linux commands, dd reads in from standard input and writes out to the standard output.
+
+It also relies on the Unix model that most things can be treated as files; that is, they need to be opened, can be read from, written to, and then closed.
 
 > First, much of the sentiment you can find online and in books about Unix being all about file I/O and Windows being "broken" in this regard is obsolete. Windows NT fixed a lot of this. &#x2013;source: [A layman's explanation for "Everything is a file" — what differs from Windows&#x2026;](https://unix.stackexchange.com/questions/141016/a-laymans-explanation-for-everything-is-a-file-what-differs-from-windows)
 
@@ -269,14 +267,62 @@ finish setup (most notable, choose your desktop!!)
 -   floppy
 -   hd
 -   usb
+-   sd
 -   ssd
+-   emmc
 -   nvme
 -   etc
+
+Other "files" &#x2026;
+
+**Aside: file, file format**
+
+> In 1952, "file" denoted, among other things, information stored on punched cards. (&#x2026;) [./img/file-punch-card-decks256x256.png]] On most modern operating systems, files are organized into one-dimensional arrays of bytes. The format of a file is defined by its content since a file is solely a container for data. (&#x2026;) On some platforms the format is indicated by its filename extension, specifying the rules for how the bytes must be organized and interpreted meaningfully. (&#x2026;) &#x2013;source: [Computer file - Wikipedia](https://en.wikipedia.org/wiki/Computer_file)
+
+> A file format is a standard way that information is [*encoded*](sec.md) <sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup> for storage in a computer file. It specifies how bits are used to encode information in a digital storage medium. File formats may be either proprietary or free. &#x2013;source: [File format - Wikipedia](https://en.wikipedia.org/wiki/File_format)
+
+./img/
+
+**Aside: file extensions\*** Aside: compression\*
 
 
 # Aside: types of memory
 
-a. RAM - working memory - short term b. ROM
+> An archaic synonym for memory is store. &#x2013;source:[Computer memory - Wikipedia](https://en.wikipedia.org/wiki/Computer_memory#cite_note-computerhistory-7)
 
+Data *storage* is the recording (storing) of information (data) in a storage medium.
 
-# Aside: compression
+*Memory* (in computing) is a device or system that is used to store information for immediate use in a computer (or related computer hardware and digital electronic devices).
+
+Computer memory operates at a high speed compared to *storage* that is slower but less expensive and higher in capacity.
+
+Besides storing **opened programs**, computer memory serves as disk cache and write buffer to improve both reading and writing performance. Operating systems borrow RAM capacity for caching so long as not needed by running software.
+
+If needed, contents of the computer memory can be transferred to storage; a common way of doing this is through a memory management technique called virtual memory.
+
+Modern memory is implemented as semiconductor memory.
+
+There are two main kinds of semiconductor memory, volatile and non-volatile. Volatile memory is computer memory that requires power to maintain the stored information.
+
+Examples of non-volatile memory are flash memory and ROM, PROM, EPROM and EEPROM memory.
+
+Examples of volatile memory are dynamic random-access memory (DRAM) used for primary storage, and static random-access memory (SRAM) used for CPU cache.
+
+RAM - working memory - short term. DRAM dominates for desktop system memory. SRAM is used for CPU cache.
+
+Most semiconductor memory is organized into memory cells each storing one bit (0 or 1).
+
+Zie verder: [Computer hardware - Wikipedia](https://en.wikipedia.org/wiki/Computer_hardware) oa:
+
+*Von Neumann architecture*
+
+The template for all modern computers is the Von Neumann architecture, detailed in a 1945 paper by Hungarian mathematician John von Neumann. This describes a design architecture for an electronic digital computer with subdivisions of a processing unit consisting of an arithmetic logic unit and processor registers, a control unit containing an instruction register and program counter, a memory to store both data and instructions, external mass storage, and input and output mechanisms. The meaning of the term has evolved to mean a stored-program computer in which an instruction fetch and a data operation cannot occur at the same time because they share a common bus. This is referred to as the Von Neumann bottleneck and often limits the performance of the system.
+
+Ga verder met:
+
+-   Code
+-   dat andere boek
+
+## Footnotes
+
+<sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> code is a system of rules (e.g. a (cryptographic) hash function?!) to convert information into another form, *sometimes shortened or secret*, for communication through a communication channel or storage in a storage medium
