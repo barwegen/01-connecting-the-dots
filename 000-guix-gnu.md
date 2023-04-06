@@ -13,7 +13,7 @@ GNU Guix focuses on respecting the user’s computing freedom.
 
 installing OS with usb / working with *images*: <./001-iso-vs-img?.md> ![img](./img/folder48x48.png) <./001-iso-img.md>
 
-[link](./001-iso-img.md)
+[link](001-iso-img.md)
 
 -   Create the folder in the right location
 -   Move some configuration files into it
