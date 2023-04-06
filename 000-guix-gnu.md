@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://git-scm.com/images/logo@2x.png">
+ < a href="https://git-scm.com/images/logo@2x.png">
     <img src="./img/guix48x48.png"> 
   </a>
 </div>
@@ -11,7 +11,9 @@ GNU Guix focuses on respecting the user’s computing freedom.
 
 # tl;dr
 
-installing OS with usb / working with *images*: <./001-iso-vs-img?.md> ![img](./img/folder48x48.png)
+installing OS with usb / working with *images*: <./001-iso-vs-img?.md> ![img](./img/folder48x48.png) <./001-iso-vs-img?.md>
+
+[link](./001-iso-vs-img?.md)
 
 -   Create the folder in the right location
 -   Move some configuration files into it
