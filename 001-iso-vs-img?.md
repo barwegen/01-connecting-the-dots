@@ -4,9 +4,22 @@
   </a>
 </div>
 
-GNU Guix focuses on respecting the user’s computing freedom. tl;dr
+tl;dr
 
-    dd 
+**Important:** The image must be written to the **whole-disk device and not a partition**, e.g. /dev/sdb and not /dev/sdb1. Do not use tools like unetbootin which alter the image.
+
+    fdisk /dev/sdb/
+
+press `p` to see current partitions press `n` to crate a new partition press `d` to remove existing partitions, this to crate a "whole disk device" To write changes press `w`
+
+For guixSD: An ISO-9660 installation image that can be written to a USB stick or burnt to a DVD can be downloaded from ‘<https://ftp.gnu.org/gnu/guix/guix-system-install-1.3.0.x86_64-linux.iso>’.
+
+```shell
+dd if=guix-system-install-1.3.0.x86_64-linux.iso of=/dev/sdX status=progress
+sync
+```
+
+Once this is done, you should be able to reboot the system and boot from the USB stick
 
 **iso vs img?** - (optical) disk image
 

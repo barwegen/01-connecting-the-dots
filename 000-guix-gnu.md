@@ -4,8 +4,9 @@
   </a>
 </div>
 
--   a profile is a directory containing installed packages. ([guix#Getting Started](guix#Getting Started))
--   
+GNU Guix focuses on respecting the user’s computing freedom.
+
+-   **profile:** a profile is a directory containing installed packages. ([guix#Getting Started](guix#Getting Started))
 
 
 # tl;dr
