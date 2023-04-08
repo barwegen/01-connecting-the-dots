@@ -10,7 +10,7 @@
 
 GNU Guix focuses on respecting the user’s computing *freedom*.
 
-[org#Activation](org#Activation)
+-   [org#Activation](org#Activation)
 
 
 # tl;dr
