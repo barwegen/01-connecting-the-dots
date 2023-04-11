@@ -208,6 +208,8 @@ We allready have a local repo, so: Then [Managing remote repositories - GitHub D
 
     $ git remote add origin git@github.com:barwegen/git.git
 
+git remote add origin git@github.com:barwegen/testing.git
+
     $ git branch -M main
 
     $ git push -u origin main   ==>
@@ -228,9 +230,7 @@ We allready have a local repo, so: Then [Managing remote repositories - GitHub D
 
 This command pushes the current branch to its push-remote.
 
-With a prefix argument or when the push-remote is either not configured or unusable, then let the user first configure the push-remote:
-
-    "C-x h g h M"
+With a prefix argument or when the push-remote is either not configured or unusable, then let the user first configure the push-remote.
 
     > Enter passphrase for key '/home/fhb/.ssh/id.rsa':     
 
