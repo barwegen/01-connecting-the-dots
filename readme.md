@@ -4,7 +4,7 @@ Ok,nu de android app voor github geinstalleerd om ... deze als 'pastebin' te geb
 
 Blackberry 
 - It's not called Hub anymore. Look for "Inbox" in your app drawer.
-- 
+- notable: https://crackberry.com/blackberry-releases-notable-android-part-blackberry-hub-suite-applications 
 
 
 - https://realcurrencies.wordpress.com/2012/02/17/how-the-money-power-created-libertarianism-and-austrian-economics/
