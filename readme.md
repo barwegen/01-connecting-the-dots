@@ -2,6 +2,14 @@
 
 Ok,nu de android app voor github geinstalleerd om ... deze als 'pastebin' te gebruiken... en dat werkt... 
 
+Blackberry 
+- It's not called Hub anymore. Look for "Inbox" in your app drawer.
+- 
+
+
+- https://realcurrencies.wordpress.com/2012/02/17/how-the-money-power-created-libertarianism-and-austrian-economics/
+
+
 
 
 **Sharpening that knife**
